@@ -1,0 +1,121 @@
+.custom-navbar {
+  background: rgba(0, 128, 145, 0.55); /* Teal Glassy */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 0 0 18px 18px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar-logo img {
+  height: 48px;
+  width: auto;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.navbar-logo a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+.navbar-links a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffc107;
+}
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.btn-line {
+  width: 28px;
+  height: 3px;
+  background: #ffffff;
+  margin: 4px 0;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(28, 67, 104, 0.85); /* Updated glassy mobile color */
+    backdrop-filter: blur(14px);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 999;
+    padding: 20px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .menu-btn.open .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+
+  .menu-btn.open .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn.open .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
