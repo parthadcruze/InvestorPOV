@@ -8,8 +8,9 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-radius: 0 0 18px 18px;
+  /* border-radius: 0 0 18px 18px; */ /* ❌ Remove or comment this line */
 }
+
 
 .navbar-container {
   display: flex;
@@ -76,21 +77,20 @@
   margin: 4px 0;
   transition: 0.3s ease;
 }
-
 @media (max-width: 768px) {
   .navbar-links {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: rgba(28, 67, 104, 0.85); /* Updated glassy mobile color */
-    backdrop-filter: blur(14px);
+    background: #1c4368; /* ✅ SOLID color - NO transparency */
+    backdrop-filter: none; /* ✅ Remove blur effect */
     position: absolute;
     top: 70px;
     left: 0;
     z-index: 999;
     padding: 20px 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .navbar-links.open {

@@ -4,13 +4,15 @@ body {
   background: #f8f9fb;
 }
 
+
 .app-container {
-  padding: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .page {
   max-width: 800px;
-  margin: 60px auto;
+  margin: 30px auto;
 }
 
 .page h2, .page h1 {

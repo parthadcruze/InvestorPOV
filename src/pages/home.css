@@ -1,0 +1,172 @@
+/* Make sure the entire page gets the dark background */
+
+.hero-section {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .hero-title span {
+    color: #00d4ff;
+  }
+  
+  .hero-subtext {
+    font-size: 1.25rem;
+    color: #dbeafe;
+    margin-bottom: 40px;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #00d4ff;
+  }
+ 
+
+  .work-together-section {
+    margin-top: 80px;
+    text-align: center;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    padding: 60px 40px; /* increased horizontal padding */
+    border-radius: 20px;
+    color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .work-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ffc8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .shake-icon {
+    font-size: 2rem;
+    color: #00ffc8;
+  }
+  
+  .work-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #d4f1f9;
+  }
+  
+  .work-btn {
+    background: linear-gradient(145deg, #00ffc8, #00dab0);
+    color: #0f2027;
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 255, 200, 0.3);
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+  }
+  
+  .work-btn:hover {
+    background: linear-gradient(145deg, #00e6b6, #00bfa0);
+    box-shadow: 0 6px 25px rgba(0, 255, 200, 0.5);
+    transform: translateY(-2px);
+  }
+
+/* Add this globally */
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal overflow */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Updated media query */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .hero-subtext {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 90%;
+    margin: 0 auto; /* Ensures centering */
+  }
+
+  .hero-section,
+  .work-together-section,
+  .contact-wrapper {
+    padding: 50px 40px;
+    box-sizing: border-box; /* Ensures padding doesn't add overflow */
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Center the form */
+  }
+
+  .contact-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contact-subtext {
+    font-size: 1rem;
+    text-align: center;
+  }
+}

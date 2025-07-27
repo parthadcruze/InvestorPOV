@@ -1,0 +1,90 @@
+.management-page {
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    padding: 80px 20px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .management-title {
+    font-size: 3rem;
+    color: #00ffc8;
+    margin-bottom: 10px;
+  }
+  
+  .management-subtitle {
+    font-size: 1.2rem;
+    color: #d4f1f9;
+    margin-bottom: 60px;
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .member-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-12px);
+    background: rgba(0, 255, 212, 0.12);
+  }
+  
+  .member-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #00ffd0;
+  }
+  
+  .member-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .member-card h4 {
+    font-size: 1rem;
+    color: #a2f5ff;
+    margin-bottom: 15px;
+  }
+  
+  .member-card p {
+    font-size: 0.95rem;
+    color: #d4e4ef;
+    margin-bottom: 20px;
+  }
+  
+  .linkedin-btn {
+    background-color: #0a66c2;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .linkedin-btn:hover {
+    background-color: #084c94;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .member-card {
+      width: 90%;
+    }
+  }
+  

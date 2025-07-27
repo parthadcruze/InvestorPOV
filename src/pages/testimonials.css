@@ -1,0 +1,108 @@
+.testimonials-section {
+  padding: 60px 30px;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.testimonials-title {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  color: #00ffc8;
+  letter-spacing: 1px;
+}
+
+.testimonials-subtext {
+  font-size: 1.2rem;
+  color: #c0eaff;
+  margin-bottom: 45px;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 35px 25px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #00ffc8;
+  box-shadow: 0 12px 32px rgba(0, 255, 200, 0.4);
+}
+
+.testimonial-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 18px;
+  border: 3px solid #00ffc8;
+  object-fit: cover;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  color: #ccfaff;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00ffc8;
+}
+
+.testimonial-role {
+  font-size: 0.95rem;
+  color: #a0d4f1;
+  margin-top: 4px;
+}/* Responsive - 6
+
+
+00px and below */
+@media (max-width: 600px) {
+  .testimonials-section {
+    padding: 60px 40px; /* More space on left/right for mobile */
+  }
+
+  .testimonial-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Space between cards */
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 360px; /* Keeps it readable on mobile */
+    margin: 0 auto; /* Center the card */
+    padding: 30px 20px;
+    text-align: center; /* ✅ Centers all text inside */
+  }
+
+  .testimonial-quote {
+    font-size: 1.05rem;
+  }
+
+  .testimonial-name {
+    font-size: 1.25rem;
+  }
+
+  .testimonial-role {
+    font-size: 1rem;
+  }
+}

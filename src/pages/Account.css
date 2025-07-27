@@ -1,0 +1,84 @@
+.account-page {
+    padding: 80px 10%;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .account-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00ffc8;
+  }
+  
+  .account-header p {
+    font-size: 1.2rem;
+    color: #d4f1f9;
+    margin-bottom: 50px;
+  }
+  
+  .account-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .account-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .account-card:hover {
+    transform: translateY(-10px);
+    background: rgba(0, 255, 212, 0.12);
+  }
+  
+  .account-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  
+  .account-card h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .account-card p {
+    font-size: 0.95rem;
+    color: #d4e4ef;
+    margin-bottom: 20px;
+  }
+  
+  .open-btn {
+    background-color: #00ffc8;
+    color: #0f2027;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    display: inline-block;
+  }
+  
+  .open-btn:hover {
+    background-color: #01dab2;
+    color: #000;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .account-card {
+      width: 90%;
+    }
+  }
+  
